@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction:column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: url("https://source.unsplash.com/random?3d Renders?");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(207, 117, 0);
+    font-weight: 900;
+}
+
+.clock{
+    
+    display: flex;
+    
+}
+
+.clock div{
+    margin: 5px;
+    position: relative;
+  
+
+}
+
+.clock span{
+    border-radius: 15px 15px 15px 15px;
+    width: 100px;
+    height: 80px;
+    background:linear-gradient(40deg, rgba(66, 43, 43, 0.7) 30%, orange 100%);
+    opacity: 80%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+   font-weight: 900;
+   font-family: Arial, Helvetica, sans-serif;
+   text-shadow: 2px 2px 2px rgb(255, 153, 0);  
+   transition: 300ms ease;
+   animation:size 202ms;
+   animation-direction:reverse ;
+}
+
+@keyframes size {
+    0%,100%{
+        transform: scale(1.1);
+    }
+}
+
+.clock span:hover{
+    transform: scale(1.1);
+}
+
+.clock .text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background:black;
+    opacity: 80%;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.clock #am{
+    position:absolute;
+    width: 60px;
+    height: 30px;
+     bottom:0;
+     font-size: 20px;
+     background: rgb(0, 0, 0);
+     color: white;
+     opacity:80%;
+}
